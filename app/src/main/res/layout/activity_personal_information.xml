@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#664FA3">
+        <TextView
+            android:id="@+id/PersonalInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Personal Information"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selected_image"
+        android:src="@color/black"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:focusable="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_backgroundall"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Firstname Lastname ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="first-lastname"
+            android:inputType="textPersonName"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Birthday ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="(01-01-1999)"
+            android:inputType="date"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Email ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="example@example.com"
+            android:inputType="textEmailAddress"
+            android:textColor="#0000FF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#263238"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:radius="16dp"/>
+</LinearLayout>

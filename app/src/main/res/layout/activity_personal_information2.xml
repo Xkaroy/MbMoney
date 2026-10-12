@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#664FA3">
+        <TextView
+            android:id="@+id/PersonalInformation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Additional Information"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_backgroundall"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:radius="16dp">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** IDnumber ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="National ID (13 digits)"
+            android:inputType="phone"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Address ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="Street address"
+            android:inputType="textMultiLine"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Telephone ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="+66957744910"
+            android:inputType="phone"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*** Third party contact information ***"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="person:2310511101085"
+            android:inputType="text"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly income"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/et_income"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_backgroundedittextall"
+            android:hint="10000+"
+            android:inputType="numberDecimal"
+            android:textColor="#0000FF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textColor="#263238"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:radius="16dp"/>
+</LinearLayout>

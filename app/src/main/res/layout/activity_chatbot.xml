@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatbotActivity"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/ai_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F3ECFF"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MbMoney • AI ฟรี"
+                android:textColor="#352456"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/ai_settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ตั้งค่า AI" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ai_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI ฟรีในเครื่อง • ต้องเปิด Ollama บนคอม"
+            android:textColor="#352456"
+            android:textSize="13sp"
+            android:accessibilityLiveRegion="polite" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/ai_header"
+        android:layout_above="@id/bottom_layout"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_text"
+        android:layout_centerInParent="true"
+        android:text="MbMoney ผู้ช่วยวางแผนการออม"
+        android:gravity="center"
+        android:textSize="28dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottom_layout">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Home"
+            android:scaleType="centerInside"
+            android:src="@drawable/returnhome" />
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/send_btn"
+            android:background="@color/white"
+            android:hint="พิมพ์ข้อความถึง MbMoney"
+            android:maxLength="2000"
+            android:padding="16dp" />
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:contentDescription="ส่งข้อความ"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:src="@drawable/send"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

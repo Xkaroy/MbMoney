@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectfinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="MbMoney"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projectfinal"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity_a"
+            android:label="MbMoney"
+            android:icon="@mipmap/ic_launcher"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PersonalInformationActivity" android:exported="true" />
+        <activity android:name=".PersonalInformationActivity2" android:exported="true" />
+        <activity android:name=".ChooseProgramActivity" android:exported="true" />
+        <activity android:name=".ChatbotActivity" android:exported="true" />
+        <activity android:name=".PayActivity" android:exported="true" />
+        <activity android:name=".PayActivity2" android:exported="true" />
+        <activity android:name=".PayActivity3" android:exported="true" />
+        <activity android:name=".PayActivity4" android:exported="true" />
+        <activity android:name=".HomeActivity" android:exported="true" />
+        <activity android:name=".SettingsActivity" android:exported="true" />
+        <activity android:name=".ProcessActivity" android:exported="true" />
+    </application>
+
+</manifest>
